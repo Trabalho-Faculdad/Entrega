@@ -4,7 +4,7 @@ import zipfile
 import datetime
 
 # Definindo o diretório de origem e o diretório de destino
-source_dir = "C:/Users/bruno/Downloads"
+source_dir = "C:/Users/Nome_Usuario/Downloads"
 target_dir = "D:/"
 
 # Definindo a função de backup
@@ -26,8 +26,7 @@ def backup_files(source_dir, target_dir):
                 # Adicionando cada arquivo ao arquivo zip
                 zipf.write(os.path.join(root, file))
 
-    # Imprimindo uma mensagem de sucesso
-    print(f"Backup de {source_dir} concluído com sucesso. O backup está armazenado em {backup_file}.")
+    print(f"Backup de {source_dir} concluído com sucesso.")
 
 # Chamando a função de backup
 backup_files(source_dir, target_dir)
